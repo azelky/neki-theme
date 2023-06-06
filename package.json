@@ -24,9 +24,19 @@
   ],
   "scripts": {
     "commit": "git cz",
-    "publish": "vsce publish"
+    "publish": "vsce publish",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "engines": {
     "vscode": "^1.0.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Neki",
+        "uiTheme": "vs-dark",
+        "path": "./themes/neki-color-theme.json"
+      }
+    ]
   }
 }

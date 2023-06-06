@@ -3,7 +3,7 @@
 ## Hello 👋
 
 This is my first theme 🤟  
-Yes, I like bright colors 💜
+Yes, I like bright colors 🦄
 
 ## Neki
 
@@ -16,7 +16,7 @@ Inspired by [Material Palenight Theme](https://marketplace.visualstudio.com/item
 
 Go to Extensions and look for **Neki** extension.
 Then, go to file > Preferences > Color Themes and find **Neki** or in settings.json file you can add:
-`"workbench.colorTheme": "neki"`
+`"workbench.colorTheme": "Neki"`
 
 ## Matching colors for terminal 🌸
 

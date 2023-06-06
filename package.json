@@ -1,0 +1,31 @@
+{
+  "name": "neki",
+  "displayName": "Neki",
+  "version": "1.0.0",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "description": "Neki theme. Dark theme with Palenight/Panda themes inspirations",
+  "publisher": "azelky",
+  "author": {
+    "name": "azelky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azelky/neki-theme.git"
+  },
+  "homepage": "https://github.com/azelky/neki-theme",
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "Theme",
+    "Dark Theme",
+    "Neki"
+  ],
+  "scripts": {
+    "commit": "git cz",
+    "publish": "vsce publish"
+  },
+  "engines": {
+    "vscode": "^1.0.0"
+  }
+}

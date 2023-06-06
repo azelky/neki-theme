@@ -1,0 +1,10 @@
+### Node ###
+# Dependency directories
+node_modules
+
+
+### OSX ###
+.DS_Store
+
+### Misc ###
+*.vsix

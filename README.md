@@ -14,7 +14,9 @@ Inspired by [Material Palenight Theme](https://marketplace.visualstudio.com/item
 
 ## How to activate the theme ✨
 
-Go to File > Preferences > Color Themes and find **Neki**.
+Go to Extensions and look for **Neki** extension.
+Then, go to file > Preferences > Color Themes and find **Neki** or in settings.json file you can add:
+`"workbench.colorTheme": "neki"`
 
 ## Matching colors for terminal 🌸
 

@@ -9,6 +9,10 @@
     "name": "azelky"
   },
   "icon": "neki-icon.png",
+  "galleryBanner": {
+    "color": "#28273A",
+    "theme": "dark"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/azelky/neki-theme.git"
@@ -24,11 +28,16 @@
   ],
   "scripts": {
     "commit": "git cz",
-    "publish": "vsce publish",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "patch": "vsce publish patch",
-    "minor": "vsce publish minor",
-    "major": "vsce publish major"
+    "version:update": "LAST_VERSION=$(npm pkg get version | sed 's/\"//g') && npm run changelog && git add . && git commit -m 'update to v'$LAST_VERSION && git tag v$LAST_VERSION",
+    "version:tag": "LAST_VERSION=$(npm pkg get version | sed 's/\"//g') && git tag v$LAST_VERSION",
+    "version:patch": "npm --no-git-tag-version version patch && npm run version:update",
+    "version:minor": "npm --no-git-tag-version version minor && npm run version:update",
+    "version:major": "npm --no-git-tag-version version major && npm run version:update",
+    "publish": "vsce publish",
+    "publish:patch": "vsce publish patch",
+    "publish:minor": "vsce publish minor",
+    "publish:major": "vsce publish major"
   },
   "engines": {
     "vscode": "^1.0.0"

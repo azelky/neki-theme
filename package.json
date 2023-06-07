@@ -29,7 +29,7 @@
   "scripts": {
     "commit": "git cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "version:update": "LAST_VERSION=$(npm pkg get version | sed 's/\"//g') && npm run changelog && git add . && git commit -m 'update to v'$LAST_VERSION && git tag v$LAST_VERSION",
+    "version:update": "LAST_VERSION=$(npm pkg get version | sed 's/\"//g') && npm run changelog && git add . && git commit -m 'chore: 🌱 update to v'$LAST_VERSION && git tag v$LAST_VERSION",
     "version:tag": "LAST_VERSION=$(npm pkg get version | sed 's/\"//g') && git tag v$LAST_VERSION",
     "version:patch": "npm --no-git-tag-version version patch && npm run version:update",
     "version:minor": "npm --no-git-tag-version version minor && npm run version:update",
